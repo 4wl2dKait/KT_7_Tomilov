@@ -1,0 +1,15 @@
+C:\Users\comcuru\Desktop\kt7\KT_7_Tomilov\KT7_tm\KT7_tm\bin\Debug\KT7_tm.exe.config
+C:\Users\comcuru\Desktop\kt7\KT_7_Tomilov\KT7_tm\KT7_tm\bin\Debug\KT7_tm.exe
+C:\Users\comcuru\Desktop\kt7\KT_7_Tomilov\KT7_tm\KT7_tm\bin\Debug\KT7_tm.pdb
+C:\Users\comcuru\Desktop\kt7\KT_7_Tomilov\KT7_tm\KT7_tm\obj\Debug\KT7_tm.csproj.AssemblyReference.cache
+C:\Users\comcuru\Desktop\kt7\KT_7_Tomilov\KT7_tm\KT7_tm\obj\Debug\MainWindow.g.cs
+C:\Users\comcuru\Desktop\kt7\KT_7_Tomilov\KT7_tm\KT7_tm\obj\Debug\App.g.cs
+C:\Users\comcuru\Desktop\kt7\KT_7_Tomilov\KT7_tm\KT7_tm\obj\Debug\KT7_tm_MarkupCompile.cache
+C:\Users\comcuru\Desktop\kt7\KT_7_Tomilov\KT7_tm\KT7_tm\obj\Debug\KT7_tm_MarkupCompile.lref
+C:\Users\comcuru\Desktop\kt7\KT_7_Tomilov\KT7_tm\KT7_tm\obj\Debug\MainWindow.baml
+C:\Users\comcuru\Desktop\kt7\KT_7_Tomilov\KT7_tm\KT7_tm\obj\Debug\KT7_tm.g.resources
+C:\Users\comcuru\Desktop\kt7\KT_7_Tomilov\KT7_tm\KT7_tm\obj\Debug\KT7_tm.Properties.Resources.resources
+C:\Users\comcuru\Desktop\kt7\KT_7_Tomilov\KT7_tm\KT7_tm\obj\Debug\KT7_tm.csproj.GenerateResource.cache
+C:\Users\comcuru\Desktop\kt7\KT_7_Tomilov\KT7_tm\KT7_tm\obj\Debug\KT7_tm.csproj.CoreCompileInputs.cache
+C:\Users\comcuru\Desktop\kt7\KT_7_Tomilov\KT7_tm\KT7_tm\obj\Debug\KT7_tm.exe
+C:\Users\comcuru\Desktop\kt7\KT_7_Tomilov\KT7_tm\KT7_tm\obj\Debug\KT7_tm.pdb
