@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TomilovKT7Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Adresses">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="indeks" />
+      <PropertyRef Name="region_id" />
+      <PropertyRef Name="city_id" />
+      <PropertyRef Name="street_id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="indeks" Type="Int32" Nullable="false" />
+    <Property Name="region_id" Type="Int64" Nullable="false" />
+    <Property Name="city_id" Type="Int64" Nullable="false" />
+    <Property Name="street_id" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AdressesCity">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="city" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="city" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AdressesRegion">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="region" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="region" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AdressesStreet">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="street" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="street" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MaterialType">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="brak_percent" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="brak_percent" Type="Decimal" Precision="3" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PartnerCompanyType">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="type" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PartnerDirectors">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="director_name" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="director_name" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PartnerName">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PartnerProduct">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="partner_product" />
+      <PropertyRef Name="partner_id" />
+      <PropertyRef Name="product_amount" />
+      <PropertyRef Name="sale_date" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="partner_product" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="partner_id" Type="Int32" Nullable="false" />
+    <Property Name="product_amount" Type="Int32" Nullable="false" />
+    <Property Name="sale_date" Type="DateTime" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="Partners">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="partner_type_id" />
+      <PropertyRef Name="partner_id" />
+      <PropertyRef Name="director_id" />
+      <PropertyRef Name="partner_email" />
+      <PropertyRef Name="partner_phone" />
+      <PropertyRef Name="partner_adress_id" />
+      <PropertyRef Name="INN" />
+      <PropertyRef Name="rating" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="partner_type_id" Type="Int64" Nullable="false" />
+    <Property Name="partner_id" Type="Int64" Nullable="false" />
+    <Property Name="director_id" Type="Int64" Nullable="false" />
+    <Property Name="partner_email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="partner_phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="partner_adress_id" Type="Int64" Nullable="false" />
+    <Property Name="INN" Type="Int64" Nullable="false" />
+    <Property Name="rating" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="product_type_id" />
+      <PropertyRef Name="product_name" />
+      <PropertyRef Name="article" />
+      <PropertyRef Name="minimal_price_for_partner" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="product_type_id" Type="Int32" Nullable="false" />
+    <Property Name="product_name" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="article" Type="Int32" Nullable="false" />
+    <Property Name="minimal_price_for_partner" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProductType">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="product_type" />
+      <PropertyRef Name="coef_product_type" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="product_type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="coef_product_type" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="TomilovKT7Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="Adresses" EntityType="Self.Adresses" />
+    <EntitySet Name="AdressesCity" EntityType="Self.AdressesCity" />
+    <EntitySet Name="AdressesRegion" EntityType="Self.AdressesRegion" />
+    <EntitySet Name="AdressesStreet" EntityType="Self.AdressesStreet" />
+    <EntitySet Name="MaterialType" EntityType="Self.MaterialType" />
+    <EntitySet Name="PartnerCompanyType" EntityType="Self.PartnerCompanyType" />
+    <EntitySet Name="PartnerDirectors" EntityType="Self.PartnerDirectors" />
+    <EntitySet Name="PartnerName" EntityType="Self.PartnerName" />
+    <EntitySet Name="PartnerProduct" EntityType="Self.PartnerProduct" />
+    <EntitySet Name="Partners" EntityType="Self.Partners" />
+    <EntitySet Name="Products" EntityType="Self.Products" />
+    <EntitySet Name="ProductType" EntityType="Self.ProductType" />
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(TomilovKT7Model.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(TomilovKT7Model.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+  </EntityContainer>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+</Schema>

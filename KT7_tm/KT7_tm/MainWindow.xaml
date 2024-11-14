@@ -6,8 +6,17 @@
         xmlns:local="clr-namespace:KT7_tm"
         mc:Ignorable="d"
         Background="#FFFFFF"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Мастер пол" Height="450" Width="800"
+        Icon="/Resources/Мастер пол.ico"
+        WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <Grid Height="60" VerticalAlignment="Top">
+            <Grid>
+                <!--Я разучился делать верстку... -->
+            </Grid>
+        </Grid>
+        <Grid>
+            
+        </Grid>
     </Grid>
 </Window>

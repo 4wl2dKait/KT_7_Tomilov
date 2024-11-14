@@ -13,3 +13,12 @@ C:\Users\comcuru\Desktop\kt7\KT_7_Tomilov\KT7_tm\KT7_tm\obj\Debug\KT7_tm.csproj.
 C:\Users\comcuru\Desktop\kt7\KT_7_Tomilov\KT7_tm\KT7_tm\obj\Debug\KT7_tm.csproj.CoreCompileInputs.cache
 C:\Users\comcuru\Desktop\kt7\KT_7_Tomilov\KT7_tm\KT7_tm\obj\Debug\KT7_tm.exe
 C:\Users\comcuru\Desktop\kt7\KT_7_Tomilov\KT7_tm\KT7_tm\obj\Debug\KT7_tm.pdb
+C:\Users\comcuru\Desktop\kt7\KT_7_Tomilov\KT7_tm\KT7_tm\obj\Debug\Pages\AuthPage.g.cs
+C:\Users\comcuru\Desktop\kt7\KT_7_Tomilov\KT7_tm\KT7_tm\obj\Debug\KT7_tm_Content.g.cs
+C:\Users\comcuru\Desktop\kt7\KT_7_Tomilov\KT7_tm\KT7_tm\bin\Debug\EntityFramework.dll
+C:\Users\comcuru\Desktop\kt7\KT_7_Tomilov\KT7_tm\KT7_tm\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\comcuru\Desktop\kt7\KT_7_Tomilov\KT7_tm\KT7_tm\bin\Debug\EntityFramework.xml
+C:\Users\comcuru\Desktop\kt7\KT_7_Tomilov\KT7_tm\KT7_tm\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\comcuru\Desktop\kt7\KT_7_Tomilov\KT7_tm\KT7_tm\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\comcuru\Desktop\kt7\KT_7_Tomilov\KT7_tm\KT7_tm\obj\Debug\Pages\AuthPage.baml
+C:\Users\comcuru\Desktop\kt7\KT_7_Tomilov\KT7_tm\KT7_tm\obj\Debug\KT7_tm.csproj.CopyComplete

@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище TomilovKT7Model" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "TomilovKT7.dbo.Adresses" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="Adresses">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="indeks" />
+      <PropertyRef Name="region_id" />
+      <PropertyRef Name="city_id" />
+      <PropertyRef Name="street_id" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="indeks" Type="int" Nullable="false" />
+    <Property Name="region_id" Type="bigint" Nullable="false" />
+    <Property Name="city_id" Type="bigint" Nullable="false" />
+    <Property Name="street_id" Type="bigint" Nullable="false" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "TomilovKT7.dbo.AdressesCity" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="AdressesCity">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="city" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="city" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "TomilovKT7.dbo.AdressesRegion" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="AdressesRegion">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="region" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="region" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "TomilovKT7.dbo.AdressesStreet" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="AdressesStreet">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="street" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="street" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "TomilovKT7.dbo.MaterialType" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="MaterialType">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="brak_percent" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="brak_percent" Type="decimal" Precision="3" Scale="2" Nullable="false" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "TomilovKT7.dbo.PartnerCompanyType" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="PartnerCompanyType">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="type" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="type" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "TomilovKT7.dbo.PartnerDirectors" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="PartnerDirectors">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="director_name" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="director_name" Type="nvarchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "TomilovKT7.dbo.PartnerName" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="PartnerName">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "TomilovKT7.dbo.PartnerProduct" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="PartnerProduct">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="partner_product" />
+      <PropertyRef Name="partner_id" />
+      <PropertyRef Name="product_amount" />
+      <PropertyRef Name="sale_date" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="partner_product" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="partner_id" Type="int" Nullable="false" />
+    <Property Name="product_amount" Type="int" Nullable="false" />
+    <Property Name="sale_date" Type="date" Nullable="false" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "TomilovKT7.dbo.Partners" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="Partners">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="partner_type_id" />
+      <PropertyRef Name="partner_id" />
+      <PropertyRef Name="director_id" />
+      <PropertyRef Name="partner_email" />
+      <PropertyRef Name="partner_phone" />
+      <PropertyRef Name="partner_adress_id" />
+      <PropertyRef Name="INN" />
+      <PropertyRef Name="rating" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="partner_type_id" Type="bigint" Nullable="false" />
+    <Property Name="partner_id" Type="bigint" Nullable="false" />
+    <Property Name="director_id" Type="bigint" Nullable="false" />
+    <Property Name="partner_email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="partner_phone" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="partner_adress_id" Type="bigint" Nullable="false" />
+    <Property Name="INN" Type="bigint" Nullable="false" />
+    <Property Name="rating" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "TomilovKT7.dbo.Products" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="product_type_id" />
+      <PropertyRef Name="product_name" />
+      <PropertyRef Name="article" />
+      <PropertyRef Name="minimal_price_for_partner" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="product_type_id" Type="int" Nullable="false" />
+    <Property Name="product_name" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="article" Type="int" Nullable="false" />
+    <Property Name="minimal_price_for_partner" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+  </EntityType>
+  <!--Ошибки, обнаруженные при создании:
+предупреждение 6002: В таблице или представлении "TomilovKT7.dbo.ProductType" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
+  <EntityType Name="ProductType">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="product_type" />
+      <PropertyRef Name="coef_product_type" />
+    </Key>
+    <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="product_type" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="coef_product_type" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="Хранилище TomilovKT7ModelContainer">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Adresses" EntityType="Self.Adresses" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Adresses].[id] AS [id], 
+    [Adresses].[indeks] AS [indeks], 
+    [Adresses].[region_id] AS [region_id], 
+    [Adresses].[city_id] AS [city_id], 
+    [Adresses].[street_id] AS [street_id]
+    FROM [dbo].[Adresses] AS [Adresses]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="AdressesCity" EntityType="Self.AdressesCity" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [AdressesCity].[id] AS [id], 
+    [AdressesCity].[city] AS [city]
+    FROM [dbo].[AdressesCity] AS [AdressesCity]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="AdressesRegion" EntityType="Self.AdressesRegion" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [AdressesRegion].[id] AS [id], 
+    [AdressesRegion].[region] AS [region]
+    FROM [dbo].[AdressesRegion] AS [AdressesRegion]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="AdressesStreet" EntityType="Self.AdressesStreet" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [AdressesStreet].[id] AS [id], 
+    [AdressesStreet].[street] AS [street]
+    FROM [dbo].[AdressesStreet] AS [AdressesStreet]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MaterialType" EntityType="Self.MaterialType" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [MaterialType].[id] AS [id], 
+    [MaterialType].[brak_percent] AS [brak_percent]
+    FROM [dbo].[MaterialType] AS [MaterialType]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PartnerCompanyType" EntityType="Self.PartnerCompanyType" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PartnerCompanyType].[id] AS [id], 
+    [PartnerCompanyType].[type] AS [type]
+    FROM [dbo].[PartnerCompanyType] AS [PartnerCompanyType]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PartnerDirectors" EntityType="Self.PartnerDirectors" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PartnerDirectors].[id] AS [id], 
+    [PartnerDirectors].[director_name] AS [director_name]
+    FROM [dbo].[PartnerDirectors] AS [PartnerDirectors]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PartnerName" EntityType="Self.PartnerName" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PartnerName].[id] AS [id], 
+    [PartnerName].[name] AS [name]
+    FROM [dbo].[PartnerName] AS [PartnerName]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PartnerProduct" EntityType="Self.PartnerProduct" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PartnerProduct].[id] AS [id], 
+    [PartnerProduct].[partner_product] AS [partner_product], 
+    [PartnerProduct].[partner_id] AS [partner_id], 
+    [PartnerProduct].[product_amount] AS [product_amount], 
+    [PartnerProduct].[sale_date] AS [sale_date]
+    FROM [dbo].[PartnerProduct] AS [PartnerProduct]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Partners" EntityType="Self.Partners" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Partners].[id] AS [id], 
+    [Partners].[partner_type_id] AS [partner_type_id], 
+    [Partners].[partner_id] AS [partner_id], 
+    [Partners].[director_id] AS [director_id], 
+    [Partners].[partner_email] AS [partner_email], 
+    [Partners].[partner_phone] AS [partner_phone], 
+    [Partners].[partner_adress_id] AS [partner_adress_id], 
+    [Partners].[INN] AS [INN], 
+    [Partners].[rating] AS [rating]
+    FROM [dbo].[Partners] AS [Partners]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Products" EntityType="Self.Products" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Products].[id] AS [id], 
+    [Products].[product_type_id] AS [product_type_id], 
+    [Products].[product_name] AS [product_name], 
+    [Products].[article] AS [article], 
+    [Products].[minimal_price_for_partner] AS [minimal_price_for_partner]
+    FROM [dbo].[Products] AS [Products]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ProductType" EntityType="Self.ProductType" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ProductType].[id] AS [id], 
+    [ProductType].[product_type] AS [product_type], 
+    [ProductType].[coef_product_type] AS [coef_product_type]
+    FROM [dbo].[ProductType] AS [ProductType]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
