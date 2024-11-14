@@ -10,13 +10,16 @@
         Icon="/Resources/Мастер пол.ico"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        <Grid Height="60" VerticalAlignment="Top">
-            <Grid>
-                <!--Я разучился делать верстку... -->
-            </Grid>
-        </Grid>
-        <Grid>
-            
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60">
+                <!-- Алён... Я разучился делать верстку... -->
+            </RowDefinition>
+            <RowDefinition>
+               
+            </RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#F4E8D3">
+            <Image Source="/Resources/Мастер пол.png"></Image>
         </Grid>
     </Grid>
 </Window>
